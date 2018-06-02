@@ -1,3 +1,11 @@
-<h1>
-    Services
-</h1>
+<h1> <%= @title %> </h1>
+
+<p>
+    <%= @content %>
+</p>
+
+<% for @service in @services %>
+    <div class="alert alert-default">
+        <%= @service %>
+    </div>
+<% end %>
