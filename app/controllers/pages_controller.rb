@@ -1,4 +1,4 @@
-class PagesController < ActionController::Base
+class PagesController < ApplicationController
     # Creating Methods
     def index
         @title ="Welcome"
