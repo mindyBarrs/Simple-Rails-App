@@ -1,2 +1,19 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<h1>Latest Blog Posts</h1>
+
+<% @post.each do |post| %>
+    <div class="card mt-4">
+        <div class="card-header text-white bg-info">
+            <h4> <%= post.title %> </h4>
+        </div>
+
+        <div class="card-body">
+            <p>
+                <%= post.body %>
+            </p>
+
+            <div class="">
+                <%= link_to 'Read More', post_path(post), { :class=>"btn btn-info" }%>
+            </div>
+        </div>
+    </div>
+<% end %>

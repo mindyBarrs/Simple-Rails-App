@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
   root 'pages#index', as: 'home'
   
   get 'about' => 'pages#about', as: 'about' # <-- That is an Alias
