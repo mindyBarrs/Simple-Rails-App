@@ -9,6 +9,11 @@ class PostsController < ApplicationController
 
   def create
     # Used to create a new blog post
+    # render plain: params[:post].inspect
+    @post = Post.new(post_params)
+    @post.save
+
+    redirect_to @post
   end
 
   def edit
@@ -20,10 +25,16 @@ class PostsController < ApplicationController
   end
 
   def show
-    # Used to show a blog
+    # Used to show indavidual blogs
+    @post = Post.find(params[:id])
   end
 
   def destroy
     # Used to delete a blog
   end
+
+  private
+    def post_params
+      params.require(:post).permit(:title, :body)
+    end
 end
