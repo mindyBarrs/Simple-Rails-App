@@ -1,2 +1,48 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 
+body{
+    background-color: #f4e285 !important;
+}
+
+h1, h3, h4{
+    color: #bc4b51 !important;
+    font-family: 'Lobster', cursive !important;
+}
+
+textarea{
+    resize: none !important;
+    height: 150px;
+}
+
+.container{
+    margin-bottom: 24px;
+}
+
+.navbar-color{
+    background: #5b8e7d;
+}
+
+.navbar-color .navbar-brand,
+.navbar-nav .nav-item a{
+    color:#f4e285;
+}
+
+.nav-item a:hover{
+    color: #f4a259;
+}
+
+.card-header{
+    background: #8cb369 !important;
+}
+
+.btn-post{
+    background: #8cb369;
+    color: #fff;
+}
+
+.btn-post:hover{
+    background: #f4e285;
+    color: #8cb369;
+    border: 1px dashed #8cb369;
+}
