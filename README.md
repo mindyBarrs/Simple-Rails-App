@@ -1,24 +1,8 @@
-# README
+# Simple Rails Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Web Application created using Ruby-on-Rails. There are acouple of pages that has pretty much nothing on them, 
+But there is a Blog page that will display some temp blogs. There is also a create blog button in the top right corner so that a blog can be created.
 
-Things you may want to cover:
+* Ruby Version 2.4.1
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Rails Version 5.2.0
